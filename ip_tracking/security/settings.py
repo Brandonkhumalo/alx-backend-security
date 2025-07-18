@@ -1,8 +1,8 @@
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -13,6 +13,8 @@ CELERY_BROKER_URL = 'redis://localhost:6379/0'
 
 DEBUG = False
 ALLOWED_HOSTS = ['<34.239.104.48>', 'localhost']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Application definition
