@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 from django.http import JsonResponse
-from ratelimit.decorators import ratelimit
+from django_ratelimit.decorators import ratelimit
 
 # 10 requests/min for authenticated users
 @ratelimit(key='ip', rate='10/m', method='POST', block=True)
