@@ -11,10 +11,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y4cqto#4^sj2p$hdc89y%h6#qi@c)q@l8*iv76)%$jfwaxufln'
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['<34.239.104.48>', 'localhost']
 
 
 # Application definition
